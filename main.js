@@ -5,9 +5,9 @@ function getrandom(){
 }
 function geturl(){
      var url = document.getElementById(“urlinput”).value;
-     var protocol_ok = url.startsWith(“http:///”) || url.startsWith(“https:///”) || url.startsWith(“ftp:///”);
+     var protocol_ok = url.startsWith(“http://”) || url.startsWith(“https://”) || url.startsWith(“ftp://”);
      if(!protocol_ok){
-         newurl = “http:///”+url;
+         newurl = “http://”+url;
          return newurl;
      }
      else{
