@@ -4,7 +4,7 @@ function getrandom(){
     return random_string();
 }
 function geturl(){
-     var url = document.getElementById(“urlinput”).value;
+     var url = document.getElementById(“demo”).value;
      var protocol_ok = url.startsWith(“http://”) || url.startsWith(“https://”) || url.startsWith(“ftp://”);
      if(!protocol_ok){
          newurl = “http://”+url;
