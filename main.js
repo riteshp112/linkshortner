@@ -1,6 +1,6 @@
 function goPython(){
             $.ajax({
-              url: "MYSCRIPT.py",
+              url: "my.py",
              context: document.body
             }).done(function() {
              alert('finished python script');;
