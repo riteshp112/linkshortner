@@ -43,7 +43,7 @@ function send_request(url) {
 let hashh = window.location.hash;
 let data;
 if (window.location.hash != "") {
-  $.getJSON(endpoint + "/" + hashh, function (data) {
+  $.getJSON(endpoint + "/#" + hashh, function (data) {
     console.log(data);
     data = data["result"];
   });
