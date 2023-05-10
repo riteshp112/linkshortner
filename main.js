@@ -13,7 +13,7 @@ function geturl() {
     url.startsWith("ftp://");
   let newurl;
   if (!protocol_ok) {
-    newurl = "http://" + url;
+    newurl = "https://" + url;
     return newurl;
   } else {
     return url;
