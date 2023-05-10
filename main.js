@@ -32,7 +32,7 @@ function shorturl() {
 function send_request(url) {
   this.url = url;
   $.ajax({
-    url: endpoint + "/" + window.location.hash,
+    url: endpoint + "/#" + window.location.hash.substr(1),
     type: "POST",
     data: JSON.stringify(this.url),
     dataType: "json",
