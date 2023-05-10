@@ -40,7 +40,7 @@ function send_request(url) {
   });
 }
 
-let hashh = window.location.hash.substr(1);
+let hashh = window.location.hash;
 let data;
 if (window.location.hash != "") {
   $.getJSON(endpoint + "/" + hashh, function (data) {
