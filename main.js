@@ -1,4 +1,4 @@
-let endpoint = "https://riteshp112.github.io/linkshortner";
+let endpoint = "https://link-shortner-tnvs.onrender.com/";
 function getrandom() {
   let random_string =
     Math.random().toString(32).substring(2, 5) +
